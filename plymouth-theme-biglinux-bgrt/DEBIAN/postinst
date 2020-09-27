@@ -1,0 +1,20 @@
+#!/bin/bash
+set -e
+
+
+
+case "$1" in
+  configure)
+  
+  #Verify if is legacy boot
+  if [[ ! -r /sys/firmware/acpi/bgrt/image ]]; then
+    sed -i 's|WatermarkVerticalAlignment=.*|WatermarkVerticalAlignment=.20|g' /usr/share/plymouth/themes/bgrt-biglinux/bgrt-biglinux.plymouth 
+  fi
+  
+	sed -i 's|COMPRESS=lz4|COMPRESS=gzip|g' /etc/initramfs-tools/initramfs.conf
+    update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/bgrt-biglinux/bgrt-biglinux.plymouth  120
+    update-initramfs -u
+;;
+
+esac
+exit 0

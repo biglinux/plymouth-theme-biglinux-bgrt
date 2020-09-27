@@ -1,0 +1,10 @@
+Package: plymouth-theme-biglinux-bgrt
+Version: 1.0.0-1big4
+Depends: plymouth-theme-spinner
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Installed-Size:732
+Description: Plymouth to BigLinux, Based on a theme designed by jimmac mixed with https://github.com/adi1090x/plymouth-themes
+
