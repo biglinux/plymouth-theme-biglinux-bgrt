@@ -1,6 +1,6 @@
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-23f890e404902be0acd18588cf014530  DEBIAN/control
 8d661b7ffd810378fadc449366d736c0  DEBIAN/postinst
+6a5348cf8da59b5d86fe0700150e9567  DEBIAN/control
 b4b1361ff57cabd9dd0ccb0c97906c21  usr/share/plymouth/themes/bgrt-biglinux/bgrt-biglinux.plymouth
 e43ad12f77293acb9d2071fdb4844b48  usr/share/plymouth/themes/bgrt-biglinux/bullet.png
 7c49b83bab57fa680699cb93835ba583  usr/share/plymouth/themes/bgrt-biglinux/capslock.png
